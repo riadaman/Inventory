@@ -1,4 +1,4 @@
-# awesome-project
+# Inventory
 
 > A Vue.js project
 
