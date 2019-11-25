@@ -29,12 +29,7 @@ export default {
  data(){
    return {
        items: [],
-       cart: [{
-         id:1,
-         title:'test',
-         photo: "http://dummyimage.com/250x250.png/dddddd/000000",
-         price: 100
-       }]
+       cart: []
    }
  },
  mounted(){
