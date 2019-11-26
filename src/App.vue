@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <navbar :items = "items"></navbar>
+  <navbar @search="search" :items = "items"></navbar>
 <div class="container">
 <div class="row">
   <div class="col-sm-9">
@@ -37,6 +37,11 @@ export default {
    //console.log(data)
  },
  methods: {
+   search(keyword){
+     this.items = data.filter(item =>{
+       return item.title.toLocaleLowerCase().indexOf(keyword.toLocaleLowerCase())  !== -1
+     })
+   },
    addCartItem(item){
      this.cart.push(item)
    },
